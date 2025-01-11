@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 RUN apt-get update \
   && apt-get -qq -y install netcat-traditional \
       libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 \
-      graphviz graphviz-dev gcc \
+      graphviz graphviz-dev gcc postgresql-client \
   && apt-get -qq clean
 
 # install python dependencies
